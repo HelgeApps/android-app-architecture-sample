@@ -1,0 +1,9 @@
+{
+    "access_token": "access_token",
+    "token_type": "Bearer",
+    "refresh_token": "refresh_token",
+    "scope": "public read_user read_photos write_photos write_likes write_followers read_collections write_collections",
+    "created_at": 1715446763,
+    "user_id": 123,
+    "username": "user123"
+}
