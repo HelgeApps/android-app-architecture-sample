@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Architecture</string>
+
+    <!-- General or reusable in multiple screens -->
+    <string name="retry_text">Retry</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="logout_success_message">Successfully logged out</string>
+    <string name="authorized">Authorized</string>
+    <string name="unknown_error">Unknown error</string>
+
+    <!-- Content Description -->
+    <string name="content_description_drawer_button" translatable="false">Open Drawer</string>
+    <string name="content_description_navigate_up" translatable="false">Navigate up</string>
+    <string name="content_description_order" translatable="false">Order</string>
+
+    <!-- Errors -->
+    <string name="error_network_no_internet">Internet is not available.\nPlease turn on mobile data or Wi-Fi.</string>
+    <string name="error_network_connection">No answer from server</string>
+    <string name="error_network_default">Please, try again later</string>
+    <string name="error_network_forbidden">Access problem</string>
+    <string name="error_network_invalid_session">Invalid session. Try again.</string>
+
+    <!-- Topics -->
+    <string name="topics_screen_name">Topics</string>
+    <string name="topics_empty_placeholder_text">No topics yet</string>
+    <string name="topics_order_by_text">Sorting</string>
+
+    <!-- Photos -->
+    <string name="photos_screen_name">Photos</string>
+    <string name="photos_empty_placeholder_text">No photos yet</string>
+
+    <!-- Unsplash Authorization -->
+    <string name="unsplash_authorize_link" translatable="false">https://unsplash.com/oauth/authorize?client_id=%1$s&amp;redirect_uri=%2$s&amp;response_type=code&amp;scope=public+read_user+read_photos+write_photos+write_likes+write_followers+read_collections+write_collections</string>
+
+    <!-- Content Description -->
+    <string name="content_description_loading">Loading, please wait…</string>
+</resources>
+
+    <!-- separate strings for each screens (fragment/activity)
+    and name strings for a specific screen with some prefix, e.g. for screen of topic list it will be "topics_*" -->

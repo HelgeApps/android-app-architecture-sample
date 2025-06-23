@@ -1,0 +1,73 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "ab2307e8c4514188ff7f7db10a6e966d",
+    "entities": [
+      {
+        "tableName": "topics",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `description` TEXT, `published_at` INTEGER NOT NULL, `cover_photophoto_urlsraw` TEXT, `cover_photophoto_urlsfull` TEXT, `cover_photophoto_urlsregular` TEXT, `cover_photophoto_urlssmall` TEXT, `cover_photophoto_urlsthumb` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "publishedAt",
+            "columnName": "published_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coverPhoto.photoUrls.raw",
+            "columnName": "cover_photophoto_urlsraw",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "coverPhoto.photoUrls.full",
+            "columnName": "cover_photophoto_urlsfull",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "coverPhoto.photoUrls.regular",
+            "columnName": "cover_photophoto_urlsregular",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "coverPhoto.photoUrls.small",
+            "columnName": "cover_photophoto_urlssmall",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "coverPhoto.photoUrls.thumb",
+            "columnName": "cover_photophoto_urlsthumb",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'ab2307e8c4514188ff7f7db10a6e966d')"
+    ]
+  }
+}
